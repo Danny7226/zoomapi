@@ -17,3 +17,11 @@ class ChatMessagesComponentV2(base.BaseComponent):
     def post(self, **kwargs):
         require_keys(kwargs, "message")
         return self.post_request("/chat/users/me/messages", data=kwargs)
+
+    def update_message(self, **kwargs):
+        util.require_keys(kwargs, "messageId")
+        return self.put_request("/chat/users/me/messages/{}".format(kwargs.get("messageId")), data=kwargs)
+
+    def delete_message(self, **kwargs):
+        util.require_keys(kwargs, "messageId")
+        return self.delete_request("/chat/users/me/messages/{}".format(kwargs.get("messageId")), params=kwargs)

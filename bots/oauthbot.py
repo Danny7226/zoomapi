@@ -39,4 +39,4 @@ while not stop:
     message = input("Enter message: ")
     print(client.chat_messages.post(to_channel=cid, message=message))
     if message == "stop":
-        stop = True 
+        stop = True

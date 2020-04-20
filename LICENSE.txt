@@ -1,4 +1,6 @@
 Copyright [2020][Crista Lopes]
+Copyright [2020][Duo Chai]
+Copyright [2020][Soobin Choi]
 
 Parts of this code are taken from https://github.com/actmd/zoomus. The following is their copyright:
 Copyright [2015] [Accountable Care Transactions, Inc]
